@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Power Source Website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/lamp.png" type="image/png">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Box Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 5rem; height: 5rem;" role="status">
+        </div>
+        <img class="position-absolute top-50 start-50 translate-middle" src="img/lamp.png" alt="Icon"
+            style="width: 3rem; height: 3rem;">
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand">
+            <img src="img/logo-white.png" alt="Logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav justify-content-center navbar-nav-scroll" style="max-height:800px;">
+                <!-- Main Divisions Dropdown -->
+                <li class="nav-item drop-item">
+                    <a class="nav-link" href="#">Main Divisions<i
+                            class="bx bx-chevron-down bx-lg d-block d-lg-none"></i></a>
+                    <div class="dropdown-list drop-plus">
+                        <div class="row">
+                            <!-- Low Current Division -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row mb-4">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="img-drop">
+                                            <img src="img/about-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 line-vertical">
+                                        <h3 class="title"><a href="category.html">Low Current</a></h3>
+                                        <ul>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Fire and
+                                                    Safety</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Audio Visual
+                                                    Solutions</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Entertainment</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Security</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Networking Division -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row mb-4">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="img-drop">
+                                            <img src="img/about-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 line-vertical">
+                                        <h3 class="title"><a href="category.html">Networking</a></h3>
+                                        <ul>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Active
+                                                    Solutions</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Infrastructure Solutions</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Collaborative Solutions</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Cyber
+                                                    Security</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Utilities Division -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row mb-4">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="img-drop">
+                                            <img src="img/about-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 line-vertical">
+                                        <h3 class="title"><a href="category.html">Utilities</a></h3>
+                                        <ul>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Energy
+                                                    Solutions</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Power
+                                                    Solutions</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Automation Division -->
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row mb-4">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="img-drop">
+                                            <img src="img/about-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 line-vertical">
+                                        <h3 class="title"><a href="category.html">Automation</a></h3>
+                                        <ul>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">Building
+                                                    Management Systems</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="subcategory.html">SCADA
+                                                    Systems</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Company Dropdown -->
+                <li class="nav-item drop-item">
+                    <a class="nav-link" href="#">Company<i class="bx bx-chevron-down bx-lg d-block d-lg-none"></i></a>
+                    <div class="dropdown-list drop-plus">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="img-drop">
+                                            <img src="img/about-1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 line-vertical">
+                                        <div class="title">Company</div>
+                                        <ul>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="profile.html">Profile</a>
+                                            </li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="about.html">About Us</a>
+                                            </li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="license.html">Our
+                                                    Licenses</a></li>
+                                            <li class="list-item"><a class="list-link button-link"
+                                                    href="approval.html">Our
+                                                    Approvals</a>
+                                            </li>
+                                            <li class="list-item"><a class="list-link button-link" href="#">History And
+                                                    Background</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- News Item -->
+                <li class="nav-item">
+                    <a class="nav-link" href="new.html">News</a>
+                </li>
+
+                <!-- Contact Us -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <ul class="nav nav-icon ms-auto">
+                <li class="nav-item">
+                    <a class="icon-link" href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="icon-link" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <span class="line-horizontal"></span><i class="fas fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0 bg-light">
+                <div class="modal-header">
+                    <h4 class="modal-title text-dark  mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center bg-dark">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control text-dark p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3 btn-primary"><i
+                                class="fa fa-search text-white"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Profile Of Company</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Profile Page</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid bg-dark py-3 custom-border">
+        <div class="container py-3">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="border-0 bg-dark overflow-hidden rounded-lg">
+                        <img src="img/about-1.jpg" class="img-fluid img-zoomin w-100 h-100 rounded-lg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                    <h1 class="display-5 text-white mb-3">About <span class="text-primary">US</span></h1>
+                    <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi
+                        alias, eius incidunt
+                        similique exercitationem magni quod recusandae maiores ducimus non porro neque odio
+                        explicabo,
+                        doloribus deleniti rem sequi adipisci sed ab qui dolorem.
+                        Odit.
+                    </p>
+                    <p class="fs-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+                        illum nemo
+                        deserunt reiciendis perferendis incidunt ullam expedita dolor, voluptas repellat
+                        necessitatibus
+                        dolore repellendus dolorum, voluptate dolorem.
+                    </p>
+                    <a href="about.html" class="btn btn-outline-primary text-uppercase view-all-btn m-1">Explore
+                        More</a>
+
+                    <button onclick="window.open('Documents/Profile.pdf', '_blank')"
+                        class="btn btn-outline-primary text-capitalize view-all-btn">
+                        View Profile PDF
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Category Start -->
+    <div class="container-fluid bg-dark blog pt-5 pb-4">
+        <div class="container py-2">
+            <div class="text-start border-bottom pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                <h2 class="display-5 text-white mb-1"><span class="text-primary">Popular</span> Categories</h2>
+            </div>
+            <div class="row g-4 justify-content-center mt-2">
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <h5 class="text-uppercase text-white">Low Current</h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="category.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <h5 class="text-uppercase text-white">Utilities</h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="category.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <h5 class="text-uppercase text-white">Networking</h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="category.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <h5 class="text-uppercase text-white">Automation</h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="category.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Category End -->
+
+    <!-- New Start -->
+    <div class="container-fluid blog pt-5 pb-4">
+        <div class="container py-2">
+            <div class="text-center pb-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+                <h2 class="display-5 text-white mb-1"><span class="text-primary">Latest</span> News</h2>
+                <p class="fs-5 fw-bold text-white">Breaking updates and stories</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Low Current</small>
+                            </div>
+                            <h5 class="text-uppercase text-white">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Unde
+                            </h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="new-details.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Low Current</small>
+                            </div>
+                            <h5 class="text-uppercase text-white">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Unde
+                            </h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="new-details.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="blog-item">
+                        <div class="blog-img">
+                            <img src="img/about-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                            <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Jan 12 2025</div>
+                        </div>
+                        <div class="blog-content rounded-bottom p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="bi bi-bookmarks me-2"></i>Low Current</small>
+                            </div>
+                            <h5 class="text-uppercase text-white">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Unde
+                            </h5>
+                            <p>Ipsum sed lorem amet dolor amet duo ipsum amet et dolore est stet tempor eos
+                                dolor ...
+                            </p>
+                            <a class="text-light text-uppercase" href="new-details.html">Read More<i
+                                    class="bi bi-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- View All News Button -->
+            <div class="text-end mt-4">
+                <a href="new.html" class="btn btn-outline-primary view-all-btn">View All News</a>
+            </div>
+        </div>
+    </div>
+    <!-- New End -->
+
+    <!-- Customer Start-->
+    <div class="partner-about-content bg-dark pt-5 pb-2 custom-border">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+            <h2 class="display-5 text-white mb-1"><span class="text-primary">Our</span> Customers</h2>
+            <p class="fs-5 fw-bold text-white text-dark"></p>
+        </div>
+
+        <div id="partner-about">
+            <div class="owl-carousel owl-theme">
+                <div class="item partner-item">
+                    <img src="img/customer-3.jpg" alt="Customer 3">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-4.jpg" alt="Customer 4">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-5.jpg" alt="Customer 7">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-8.jpg" alt="Customer 8">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-9.jpg" alt="Customer 9">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-10.jpg" alt="Customer 10">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-11.jpg" alt="Customer 11">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-6.jpg" alt="Customer 6">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-12.jpg" alt="Customer 12">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-13.jpg" alt="Customer 13">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-1.jpg" alt="Customer 1">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-2.jpg" alt="Customer 2">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-14.jpg" alt="Customer 14">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-15.jpg" alt="Customer 15">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/customer-16.jpg" alt="Customer 16">
+                </div>
+
+                <!-- Add more partners as needed -->
+            </div>
+        </div>
+    </div>
+    <!-- Customer End -->
+
+    <!-- Mission Start -->
+    <div class="container-fluid bg-dark py-3 custom-border">
+        <div class="container py-3">
+            <div class="row g-5 align-items-center overflow-hidden">
+                <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                    <h2 class="display-5 text-white mb-4"><span class="text-primary">Our</span> Mission</h2>
+                    <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi
+                        alias, eius incidunt
+                        similique exercitationem magni quod recusandae maiores ducimus non porro neque odio
+                        explicabo,
+                        doloribus deleniti rem sequi adipisci sed ab qui dolorem. Optio sint eius illum
+                        consequuntur.
+                    </p>
+                    <p class="fs-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+                        illum nemo
+                        deserunt reiciendis perferendis incidunt ullam expedita dolor, voluptas repellat
+                        necessitatibus
+                        dolore repellendus dolorum, voluptate dolorem.
+                    </p>
+                </div>
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="border-0 bg-secondary overflow-hidden rounded-lg">
+                        <img src="img/about-1.jpg" class="img-fluid img-zoomin w-100 rounded-lg" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mission End -->
+
+    <!-- Vision Start -->
+    <div class="container-fluid bg-dark py-3 custom-border">
+        <div class="container py-3">
+            <div class="row g-5 overflow-hidden align-items-center">
+                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="border-0 bg-secondary overflow-hidden rounded-lg">
+                        <img src="img/about-1.jpg" class="img-fluid img-zoomin w-100 rounded-lg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                    <h2 class="display-5 text-white mb-4"><span class="text-primary">Our</span> Vision</h2>
+                    <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint commodi
+                        alias, eius incidunt
+                        similique exercitationem magni quod recusandae maiores ducimus non porro neque odio
+                        explicabo,
+                        doloribus deleniti rem sequi adipisci sed ab qui dolorem. Optio sint eius illum
+                        consequuntur.
+                    </p>
+                    <p class="fs-5 mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+                        illum nemo
+                        deserunt reiciendis perferendis incidunt ullam expedita dolor, voluptas repellat
+                        necessitatibus
+                        dolore repellendus dolorum, voluptate dolorem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vision End -->
+
+    <!-- Partner Start-->
+    <div class="partner-about-content bg-dark pt-5 pb-2 custom-border">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px;"></div>
+            <h2 class="display-5 text-white mb-1"><span class="text-primary">Our</span> Partners</h2>
+            <p class="fs-5 fw-bold text-white text-dark">Be informed our Company Partners</p>
+        </div>
+
+        <div id="partner-about">
+            <div class="owl-carousel owl-theme">
+                <div class="item partner-item">
+                    <img src="img/company-registered-1.jpg" alt="Partner 1">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-2.jpg" alt="Partner 2">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-3.jpg" alt="Partner 3">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-4.jpg" alt="Partner 4">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-5.jpg" alt="Partner 5">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-6.jpg" alt="Partner 6">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-7.jpg" alt="Partner 7">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-8.jpg" alt="Partner 8">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-9.jpg" alt="Partner 9">
+                </div>
+                <div class="item partner-item">
+                    <img src="img/company-registered-10.jpg" alt="Partner 10">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Partner End -->
+
+    <!-- Team Start -->
+    <div class="container-fluid bg-dark pt-5 pb-5 custom-border">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="">
+                        <div class="bg-primary mb-3" style="width: 60px; height: 2px;"></div>
+                        <h2 class="display-5 text-white mb-1"><span class="text-primary">Team</span> Members</h2>
+                        <p class="fs-5 fw-bold text-white text-dark">Experienced Team Members</p>
+                        <p class="mb-2 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                            Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet. Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet.</p>
+                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+                            Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet. Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet.</p>
+                        <a href="structure.html" class="btn btn-outline-primary text-capitalize view-all-btn">Company
+                            Structure</a>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="team-item mb-2">
+                                <div class="overflow-hidden rounded-top position-relative">
+                                    <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                    <div class="team-social">
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-center bg-dark rounded features-light p-4">
+                                    <h5 class="mb-0 text-light">Eng. Abdulali Al-Ajmi</h5>
+                                    <span class="fw-bold text-primary">General Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="team-item">
+                                <div class="overflow-hidden rounded-top position-relative">
+                                    <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                    <div class="team-social">
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-twitter"></i></a>
+                                        <a class="btn btn-square btn-dark rounded-circle m-1" href=""><i
+                                                class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                                <div class="text-center bg-dark rounded features-light p-4">
+                                    <h5 class="mb-0 text-light">Eng. Aljaafary Hassan</h5>
+                                    <span class="fw-bold text-primary">Deputy General Manger</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Team End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary footer py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Riyadh , Suudi Arabistan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-2" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="">Low Voltage Solutions</a>
+                    <a class="btn btn-link" href="">Power Generation Equipment</a>
+                    <a class="btn btn-link" href="">Wire & Cable Accessories</a>
+                    <a class="btn btn-link" href="">Medium Voltage Solutions</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="Your email">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid py-4" style="background: #000000;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="border-bottom" href="">Asmaa Othman</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
+
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
