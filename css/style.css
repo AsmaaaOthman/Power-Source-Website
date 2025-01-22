@@ -1106,6 +1106,85 @@ html {
 }
 
 
+/*** Project Portfolio ***/
+#portfolio-flter {
+    display: inline-block;
+    background: #65b530ca;
+    padding: 10px 15px;
+}
+
+#portfolio-flter li {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--bs-light);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#portfolio-flter li:hover,
+#portfolio-flter li.active {
+    color: var(--bs-light);
+    border-color: var(--bs-light);
+}
+
+.portfolio-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-inner::before,
+.portfolio-inner::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #65b53088;
+    transition: .5s;
+}
+
+.portfolio-inner::after {
+    left: auto;
+    right: 0;
+}
+
+.portfolio-inner:hover::before,
+.portfolio-inner:hover::after {
+    width: 50%;
+}
+
+.portfolio-inner .portfolio-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    z-index: 3;
+    opacity: 0;
+}
+
+.portfolio-inner:hover .portfolio-text {
+    transition-delay: .3s;
+    opacity: 1;
+}
+
+.portfolio-inner .portfolio-text .btn {
+    background: var(--light);
+    color: var(--primary);
+}
+
+.portfolio-inner .portfolio-text .btn:hover {
+    background: var(--primary);
+    color: var(--light);
+}
+
 /*** Team ***/
 .team-item {
     box-shadow: 0 0 45px rgba(137, 163, 138, 0.503);
