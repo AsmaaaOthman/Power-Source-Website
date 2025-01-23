@@ -156,9 +156,14 @@
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
-
     $('#portfolio-flter li').on('click', function () {
-        $("#portfolio-flter li").removeClass('filter-active');
+        $("#portfolio-flter li").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({ filter: $(this).data('filter') });
+    });
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('filter-active');
         $(this).addClass('filter-active');
 
         portfolioIsotope.isotope({ filter: $(this).data('filter') });
