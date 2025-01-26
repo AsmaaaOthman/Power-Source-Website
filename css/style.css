@@ -1382,6 +1382,10 @@ html {
     background-size: cover;
 }
 
+.features-gray {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+}
+
 /*** Banner Section start ***/
 .banner-2 {
     position: relative;
